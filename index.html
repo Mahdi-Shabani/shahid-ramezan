@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>یادمان شهدا</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HOME PAGE -->
+<div class="home-page" id="homePage">
+  <div class="home-hero">
+    <div class="ornament">✦ ✦ ✦</div>
+    <h1 class="home-title">یادمان شهدای جنگ رمضان</h1>
+    <div class="divider-gold"></div>
+    <p class="home-subtitle">در خاطره‌شان زندگی می‌کنیم</p>
+    <p class="home-desc">
+      برای مشاهده اطلاعات کامل هر شهید، کارت مربوطه را انتخاب کنید یا کد QR را اسکن نمایید.
+    </p>
+  </div>
+
+  <div class="cards-section">
+    <div class="section-label">مشاهده شهدا</div>
+    <div class="cards-grid" id="cardsGrid"></div>
+  </div>
+
+  <footer>یادمان شهدا · طراحی شده با احترام</footer>
+</div>
+
+<!-- PROFILE PAGE -->
+<div class="profile-page" id="profilePage">
+  <button class="back-btn" onclick="goHome()">← بازگشت</button>
+
+  <div class="profile-hero">
+    <img class="profile-bg-img" id="profileBgImg" src="" alt="">
+    <div class="profile-hero-overlay"></div>
+    <div class="profile-hero-content">
+      <div class="profile-martyrdom-label">◆ شهید راه حق</div>
+      <h1 class="profile-name" id="profileName"></h1>
+      <div class="profile-rank" id="profileRank"></div>
+    </div>
+  </div>
+
+  <div class="profile-info-section">
+    <div class="info-grid" id="infoGrid"></div>
+
+    <div class="will-section">
+      <div class="will-header">
+        <div class="will-header-line"></div>
+        <div class="will-title">✦ وصیت‌نامه ✦</div>
+        <div class="will-header-line will-header-line--reverse"></div>
+      </div>
+      <div class="will-box">
+        <p class="will-text" id="willText"></p>
+        <div class="will-signature" id="willSignature"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>یادمان شهدا · طراحی شده با احترام</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
